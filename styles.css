@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #d59393; 
+    background-color: #252525; 
     margin: 0; 
     
 }
@@ -13,17 +13,46 @@ header {
     color: #fff;
     text-align: center;
     padding: 20px;
+    margin-bottom: 40px;
 }
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+img.my-first-website-image {
+    max-width: 1000px;
+}
+
+img.Mike-Navarrete{
+    max-width: 600px;
+}
+/* I had trouble changing the image sizes without using separate image sections   */
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
 }
 
 nav ul li {
     display: inline;
     margin-right: 15px;
+    font-size: 28;
+}
+
+h1, h2, h3 {
+    color: #fff; 
+}
+
+   
+#work p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .googly-eyes {
@@ -51,5 +80,44 @@ nav ul li {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.Mike-Navarrete {
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .Mike-Navarrete {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1800px) {
+    .Mike-Navarrete {
+        width: 100%; 
+        }
+}    
+
+.my-first-website-image {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+@media (max-width: 1000px) {
+    .my-first-website-image {
+        width: 50%; 
+    }
+}
+
+@media (min-width: 1800px) {
+    .my-first-website-image {
+        width: 1000px; 
+    }
 }
 
